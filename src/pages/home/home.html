@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mapa de Posiciones
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Agregar Pos</button>
+    </ion-buttons>  
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <div #map id="map"></div>  
+
+  <ion-fab left bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+
+      <button ion-fab (click)="presentAlert($lenght2)"><ion-icon name="md-trending-up"></ion-icon></button>
+      <button ion-fab (click)="clearMarkers()"><ion-icon name="ios-eye-off"></ion-icon></button>
+  
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
